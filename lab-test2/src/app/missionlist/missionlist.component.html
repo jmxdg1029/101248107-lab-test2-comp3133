@@ -1,0 +1,11 @@
+<h1>SpaceX Mission Launch List</h1>
+<div class="section" *ngFor="let post of posts">
+    <img src={{post.links.mission_patch_small}}/>
+    <h2>{{post.mission_name}}</h2>
+    <p>{{post.launch_year}}</p>
+    <p>{{post.details}}</p>
+    <p>{{post.mission_patch_small}}</p>
+    <button class="button" routerLink= "{{post.flight_number}}" > Mission Details</button>
+
+    <hr/>
+</div>
